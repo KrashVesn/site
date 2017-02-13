@@ -1,0 +1,356 @@
+@import "bourbon"
+@import "fonts"
+@import "vars"
+
+body
+	font-size: em(16px)
+	height: 100%
+	min-height: em(770px)
+	background: #efefef
+	font-family: Segoe UI, $helvetica
+	overflow-x: hidden
+	color: $main-color
+	margin: em(24px) 
+	border: em(10px) solid #d8d8d8
+
+// header
+
+.header
+	float: left
+	height: em(170px)
+	width: 56%
+
+.header__content 
+	position: absolute
+	top: em(85px)
+
+.header__mainheader
+	font-weight: normal
+	font-size: em(30px)
+	margin: em(0px)
+
+.header__subheader
+	margin-bottom: em(20px)
+	margin-top: em(0px)
+
+
+// sidebar
+ 
+.sidebar 
+	display: inline-block
+	float: left
+	width: 20%
+	// min-width: em(180px)
+	max-width: em(200px)
+	// min-height: em(770px)
+	padding-left: em(60px)
+	padding-right: em(44px)
+
+// sidebar - logo
+
+.logo 
+	height: em(300px)
+	text-align: center
+	filter: progid:DXImageTransform.Microsoft.Matrix(sizingMethod='auto expand', M11=1, M12=0.1071067811865475, M21=-0.1071067811865475, M22=1)
+
+
+.wrapper
+	position: relative
+	top: 32%
+	right: 10%
+
+.logo__head1, .logo__head2 
+	font-size: em(70px)
+
+.logo__head3
+	font-size: em(45px)
+
+.logo__head1, .logo__head2, .logo__head3
+	font-family: Signalist, $helvetica
+	font-weight: normal
+	line-height: 0.6
+	margin: 0
+	transform: rotate(-12deg)
+
+  // sideabr - content
+
+.sidebar__content
+	max-width: em(180px)
+	margin: 0 auto
+
+.content__header
+	margin-top: em(-10px) 
+	margin-bottom: em(45px)
+
+.content__subheader
+	font-size: em(14px)
+	margin-bottom: em(10px)
+
+.content__subheader2
+	font-size: em(11px)
+	color: #c8c8c8
+	margin-top: 0
+	margin-bottom: em(7px)
+
+.display 
+	background: $main-color
+	height: em(13px)
+	width: 75%
+	border-radius: em(15px)
+
+.display__indicator
+	display: block
+	height: 100%
+	background-color: #f2a723
+	border-radius: em(15px)
+
+.wrapper2
+	float: right
+
+.percent
+	margin: 0
+	position: relative
+	bottom: em(5.5px)
+	font-size: em(17px)
+	color: #f2a723
+
+.content__subheader3
+	font-size: em(14px)
+	color: #c8c8c8
+	margin-top: em(25px)
+	margin-bottom: em(120px)
+
+.content__link
+	&:link, &:active, &:visited, &:hover
+		color: #1c91ed
+		text-decoration: none
+
+// sidebar - footer
+
+.sidebar__footer
+	max-width: em(180px)
+	margin: 0 auto
+
+.sidebar__footer__item1
+	font-size: em(12px)
+	margin-bottom: em(10px)
+
+.sidebar__footer__item2
+	margin: 0
+
+.sidebar__footer__item3
+	margin-top: em(20px)
+	margin-bottom: 0
+
+.link 
+	font-size: em(12px)
+
+// content - row
+
+.content
+	display: inline-block
+	width: 68%
+	height: em(495px)
+	border-top: 1px solid $border-color
+	border-bottom: 1px solid $border-color
+
+.content__row1 
+	margin-top: em(15px)
+	margin-right: em(5px)
+	margin-bottom: em(5px)
+	float: left
+	width: 32%
+	min-width: em(220px)
+	height: em(175px)
+	border: 1px solid #dcdcdc
+ 
+.content__row2
+	margin-top: 0
+	margin-right: em(5px)
+	margin-bottom: em(5px)
+	float: left
+	width: 32%
+	min-width: em(220px)
+	height: em(175px)
+	border: 1px solid #dcdcdc
+
+.content__item
+	margin-left: em(30px)
+	margin-right: em(30px)
+	font-size: em(14px) 
+
+// content - switch
+
+.onoffswitch 
+	position: relative
+	width: em(60px)
+	user-select: none
+	float: right
+	right: 5%
+	margin-top: em(20px)
+
+.onoffswitch__checkbox 
+	display: none
+
+.onoffswitch__label 
+	display: block
+	height: em(27px)
+	background-color: #ffffff
+	border: em(2px) solid #dcdcdc
+	border-radius: em(27px)
+	overflow: hidden
+	cursor: pointer
+
+.onoffswitch__label:before 
+	content: ""
+	position: absolute
+	width: em(21px) 
+	height: em(21px)
+	background: #979797
+	top: em(18px)
+	right: em(34px)
+	border-radius: em(36px)
+	transition: all 0.3s ease-in 0s
+
+.onoffswitch__checkbox:checked + .onoffswitch__label:before 
+	background: #58b486
+	right: em(5px)
+
+.onoffswitch__item1, .onoffswitch__item2, .onoffswitch__item3, .onoffswitch__item4, .onoffswitch__item5, .onoffswitch__item6
+	font-size: em(10px)
+	margin: 0
+	padding-left: em(5px)
+
+.img
+	display: inline-block
+	width: 65%
+	height: em(100px)
+
+.content__img1
+	img
+		margin-left: em(35px)
+		margin-top: em(20px)
+		width: 80%
+
+.content__img2 
+	img
+		margin-left: em(35px)
+		margin-top: em(8px)
+		width: 30%
+
+.content__img3
+	img
+		margin-left: em(35px)
+		margin-top: em(5px)
+		width: 70%
+
+.content__img4
+	img
+		margin-left: em(35px)
+		margin-top: em(35px)
+		width: 70%
+
+.content__img5
+	img
+		margin-left: em(35px)
+		margin-top: em(40px)
+		width: 85%
+
+.content__img6
+	img
+		margin-left: em(35px)
+		margin-top: em(40px)
+		width: 85%
+
+
+// footer
+
+.footer
+	float: left
+	height: em(100px)
+
+.footer__button1
+	// width: em(250px)
+	width: 41%
+	min-width: em(240px)
+	height: em(45px)
+	color: #ffffff
+	font-size: em(18px)
+	margin-top: em(13px)
+	margin-right: em(10px)
+	border: 1px solid #2a2a2a
+	border-radius: em(10px)
+	background: #2a2a2a
+  
+.footer__button2
+	// width: em(385px)
+	width: 47%
+	min-width: em(320px)
+	height: em(60px)
+	color: #1c91ed
+	background: $primary-color
+	border-radius: em(10px)
+	border: 1px solid #b7b7b7
+
+// popup
+
+.popup
+	display: none
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	font-size: em(16px) 
+	background-color: #ffffff
+	height: em(440px)
+	width: em(620px)
+	font-family: Segoe UI, $helvetica
+	overflow-x: hidden
+	color: $main-color
+	text-align: center
+
+.popup_main
+	width: em(540px)
+	height: em(360px)
+	margin: em(24px)
+	border: em(10px) solid #d8d8d8
+
+.popup__mainheader
+	margin-top: em(5px)
+	margin-bottom: em(5px)
+	font-size: em(58px)
+	text-align: center
+
+.popup__item
+	margin-bottom: em(15px)
+
+.popup__item2
+	font-weight: bold
+	font-size: em(36px)
+	margin-bottom: em(5px)
+
+.popup__item3
+	font-size: em(14px)
+
+.popup__button
+	width: em(280px)
+	height: em(50px)
+	font-size: em(18px)
+	color: #ffffff
+	background: #2a2a2a
+	border: 1px solid #2a2a2a
+	border-radius: em(10px)
+
+.overlay
+	display: none
+	position: absolute
+	opacity: 0.5
+	filter: alpha(opacity=50)
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	background: #000
+
+
+@import "media"
